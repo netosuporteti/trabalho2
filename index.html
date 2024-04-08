@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trafalgar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="site">
+
+  <!-- Barra de navegação -->
+  <nav class="titulo">
+    <div class="titulo-container" style="padding-left: 4rem !important;">
+      <a class="titulo-logo" href="#"><img src="images/logo.png" alt="logotipo"></a>
+
+      <div class="titulo-menu">
+        <ul class="sub-menu">
+          <li class="menu-item">
+            <a href="#" class="ativado">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#agendarConsulta" class="desativado">Find a doctor</a>
+          </li>
+          <li class="menu-item"><a href="#apps" class="desativado">Apps</a></li>
+          <li class="menu-item">
+            <a href="#" class="desativado">Testimonials</a>
+          </li>
+          <li class="menu-item">
+            <a href="#aboutUs" class="desativado">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Primeira divisoria com imagem -->
+  <div class="titulo-container b-3">
+    <div class="linha b-3 t-3">
+      <div class="coluna r-3">
+        <h1 class="tit-principal">
+          Virtual Healthcare for you
+        </h1>
+        <p class="sub-tit b-3">
+          Trafalgar provides progressive, and affordable healthcare,
+          accessible on mobile and online for everyone
+        </p>
+        <a href="#" class="btn">Consult today</a>
+      </div>
+
+      <div class="coluna l-3">
+        <img src="images/imagem1.png" alt="Medico apontando para prontuario">
+      </div>
+    </div>
+  </div>
+
+  <div id="apps">
+    <div class="titulo-container">
+      <div class="linha b-3 t-3">
+        <div class="coluna-2">
+          <h1 class="tit-principal">Our Services</h1>
+          <div class="borda-tit"></div>
+          <p class="sub-tit t-15">
+            We provide to you the best choices for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="titulo-container">
+      <div class="linha b-3 t-3 l-15">
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/busca.png" alt="lupa" class="b-15">
+              <h5 class="card-title">Search doctor</h5>
+              <p class="card-text">
+                Choose your doctor from thousands of specialist, general, and
+                trusted hospitals
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/frasco.png" alt="frasco" class="b-15">
+              <h5 class="card-title">Online pharmacy</h5>
+              <p class="card-text">
+                Buy your medicines with our mobile application with a simple
+                delivery system
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/consulta.png" alt="consulta" class="b-15">
+              <h5 class="card-title">Consultation</h5>
+              <p class="card-text">
+                Free consultation with our trusted doctors and get the best
+                recomendations
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/ficha.png" alt="ficha" class="b-15">
+              <h5 class="card-title">Details info</h5>
+              <p class="card-text">
+                Free consultation with our trusted doctors and get the best
+                recomendations
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/remedio.png" alt="Maleta de remedio" class="b-15">
+              <h5 class="card-title">Emergency care</h5>
+              <p class="card-text">
+                You can get 24/7 urgent care for yourself or your children and
+                your lovely family
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col">
+          <div class="card-border">
+            <div class="card-body">
+              <img src="images/imagem2.png" alt="Rastreamento" class="b-15">
+              <h5 class="card-title">Tracking</h5>
+              <p class="card-text">
+                Track and save your medical history and health data
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="titulo-container" style="justify-content: center;">
+      <div class="linha b-3 t-3 l-15">
+        <div class="linha-centralizada">
+          <a href="#" class="btn-white">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="agendarConsulta">
+    <div class="titulo-container" style="justify-content: center;">
+      <div class="linha b-3 t-3">
+        <div class="coluna-2">
+          <h1 class="tit-principal">Agendar Consulta</h1>
+          <div class="borda-tit"></div>
+        </div>
+      </div>
+    </div>
+                     <!-- Adicione o formulário aqui -->
+  <form action="processar_formulario.php" method="post">
+    <div class="painel-azul">
+      <div class="titulo-container">
+        <div class="linha b-3 t-3 l-3" style="justify-content: center;">
+          <div class="input-area">
+            <p>Nome</p>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div class="input-area">
+            <p>CPF</p>
+            <input type="text" name="cpf" id="cpf">
+          </div>
+          <div class="input-area">
+            <p>E-mail</p>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input-area">
+            <p>Telefone</p>
+            <input type="text" name="telefone" id="telefone">
+          </div>
+          <div class="input-area">
+            <p>Data</p>
+            <input type="date" name="data" id="data">
+          </div>
+          <div class="input-area">
+            <p>Horário</p>
+            <input type="time" name="horario" id="horario">
+          </div>
+        </div>
+      </div>
+      <div class="titulo-container" style="justify-content: center;">
+        <div class="linha-centralizada">
+          <!-- Ajuste no botão "Enviar" -->
+          <button type="submit" class="btn-transparent" onclick="mostrarAlerta()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div>
+    <div class="t-15">
+      <div class="titulo-container b-3">
+        <div class="linha t-3 b-3">
+          <div class="coluna r-3">
+            <img src="images/imagem3.png" alt="pessoas com remedios e vacinas">
+          </div>
+          <div class="coluna l-3">
+            <h1 class="tit-principal-2">Leading healthcare providers</h1>
+            <div class="borda-tit" style="margin-left: 0 !important; margin-bottom: 1.5rem;"></div>
+            <p class="sub-tit b-3">
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone. To us, it’s not
+              just work. We take pride in the solutions we deliver
+            </p>
+            <a href="#" class="btn-white">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="painel-azul t-3" id="aboutUs">
+    <div class="titulo-container t-3">
+      <div class="linha t-3" style="width: 100% !important;">
+        <div class="coluna-3-principal">
+          <img src="images/logo.png" alt="logotipo">
+          <p class="texto-footer">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <p class="texto-footer t-15">
+            ©Trafalgar PTY LTD 2020. All rights reserved
+          </p>
+        </div>
+        <div class="coluna-3">
+          <h3>
+            Company
+          </h3>
+          <p>
+            <a href="#">About</a>
+          </p>
+          <p>
+            <a href="#">Testimonials</a>
+          </p>
+          <p>
+            <a href="#">Find a doctor</a>
+          </p>
+          <p>
+            <a href="#">Apps</a>
+          </p>
+        </div>
+        <div class="coluna-3">
+          <h3>
+            Region
+          </h3>
+          <p>
+            <a href="#">Indonesia</a>
+          </p>
+          <p>
+            <a href="#">Singapore</a>
+          </p>
+          <p>
+            <a href="#">Hongkong</a>
+          </p>
+          <p>
+            <a href="#">Canada</a>
+          </p>
+        </div>
+        <div class="coluna-3">
+          <h3>
+            Help
+          </h3>
+          <p>
+            <a href="#">Help Center</a>
+          </p>
+          <p>
+            <a href="#">Contact Support</a>
+          </p>
+          <p>
+            <a href="#">Instructions</a>
+          </p>
+          <p>
+            <a href="#">How it works</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function mostrarAlerta() {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Sua consulta foi agendada com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
+    </script>
+ 
+</body>
+
+</html>
